@@ -7,7 +7,8 @@
     "start-dev-1": "env-cmd -e first nodemon --inspect=9229",
     "start-dev-2": "env-cmd -e second nodemon --inspect=9230",
     "test": "jest --coverage --config=.jest-config-unit.js",
-    "e2e-local": "env-cmd -e e2e-local jest --config=.jest-config-e2e.js"
+    "e2e-local": "env-cmd -e e2e-local jest --config=.jest-config-e2e.js",
+    "e2e": "env-cmd -e e2e jest --config=.jest-config-e2e.js"
   },
   "dependencies": {
     "axios": "^0.19.2",

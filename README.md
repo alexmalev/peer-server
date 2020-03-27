@@ -1,5 +1,33 @@
 # peer-server
 
+run locally:
+
+```sh
+$ yarn start-dev-1
+$ yarn start-dev-2
+$ curl -X POST -H "Content-Type: application/json" -d '{"something": "blabla"}' http://localhost:3000/api/resource
+$ curl http://localhost:3001/api/resource
+```
+
+unit tests:
+
+```sh
+$ yarn test
+```
+
+e2e tests:
+local run (with booth servers started locally as described above)
+
+```sh
+$ yarn e2e-local
+```
+
+e2e with actual servers
+
+```sh
+$ yarn e2e
+```
+
 deploy on ec2:
 
 ```sh
